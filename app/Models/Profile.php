@@ -24,7 +24,7 @@ class Profile extends Model
     use HasFactory, SoftDeletes;
 
     protected $fillable = [
+        'name',
         'description',
     ];
-    
 }

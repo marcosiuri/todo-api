@@ -29,7 +29,7 @@ Route::prefix('sub-tasks')->controller(SubTaskController::class)->group(function
 Route::prefix('comments')->controller(CommentController::class)->group(function () {
     Route::get('/', 'index');
     Route::post('/', 'store');
-    Route::get('{id}', 'show');
+    Route::get('{id}', 'show'); 
     Route::put('{id}', 'update');
     Route::delete('{id}', 'destroy');
 });
